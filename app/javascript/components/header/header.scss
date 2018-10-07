@@ -1,0 +1,52 @@
+$black: #000000;
+$white: #ffffff;
+$teal: #06d6cc;
+$light-teal: #11a0b2;
+
+.top-bar{
+  background-color: mix($light-teal, $white, 90%);
+  height: 50px;
+  box-sizing: border-box;
+  box-shadow: 0 3px 3px #ccc;
+  font-family: Arial,"Helvetica Neue",Helvetica,sans-serif;
+  display: flex;
+  -webkit-transition:top 0.3s;
+  transition:top 0.3s;
+}
+
+.top-bar._fixed{
+  width: 90rem;
+  height: 5.9rem;
+}
+
+.top-bar .-container {
+  width: 2rem;
+  height: 55px;
+  margin-left: -28rem;
+  position: relative;
+  box-sizing: content-box;
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  left: 33%;
+}
+
+.top-bar .-container a{
+  color: $white;
+  text-decoration: none;
+}
+
+.top-bar .-container nav{
+  font-family: 'Lobster', cursive;
+  line-height: 4.1em;
+  margin-left: 64rem;
+  font-size: 1.2em;
+  margin-top: 2rem;
+}
+
+.top-bar .-container nav a{
+  padding: 0 0.5rem 1rem 0.5rem;
+  text-decoration:none;
+  color: $black;
+  opacity: 0.9;
+}
